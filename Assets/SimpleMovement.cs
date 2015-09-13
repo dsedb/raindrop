@@ -14,7 +14,7 @@ public class SimpleMovement : MonoBehaviour {
 		{
 			float input_v = Input.GetAxis ("Vertical");
 			float input_h = Input.GetAxis ("Horizontal");
-			const float sensitivity = 8f;
+			const float sensitivity = 4f;
 			if (input_v != 0) {
 				Debug.Log(input_v);
 				transform.rotation *= Quaternion.Euler (-input_v * sensitivity, 0, 0);
